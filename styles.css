@@ -494,10 +494,13 @@ justify-content: flex-end;
     border: 1px solid #513D62;
 }
 .noticias-articulo-imagen{
-    object-fit: scale-down;
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
     scale: 80%;
 }
 .noticias-articulo-texto{
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
