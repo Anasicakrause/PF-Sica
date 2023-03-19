@@ -1,0 +1,211 @@
+/* variables */
+$color-principal: #513D62;
+$color-secundario: #F4F1C4;
+$font-family: 'Playfair Display', serif;
+
+/* imports*/
+@import "./proyectostyle";
+@import "./footer";
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: $font-family;
+}
+
+/* encabezado */
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+
+}
+.contenedor-logo{
+    justify-items: center;
+}
+.index-imagen{
+    width: 100vw;
+
+        .imagen-de-fondo {
+        overflow: hidden;
+        height: 110vh;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        }
+}
+
+/* Navbar */
+
+ul {
+    list-style: none;
+}
+
+.navbar-toggler {
+    border: none;
+
+        &:focus {
+        box-shadow: none;
+        }
+    }
+
+.offcanvas {
+    background-color: $color-secundario;
+    text-align: center;
+
+    &-body {
+        color: $color-principal;
+        font-weight: bold;
+
+        .navbar-nav {
+
+            .nav-item {
+        
+                .nav-link {
+                    color: $color-principal;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.contenedor-inicio {
+    a {
+        color: $color-principal;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+/* Frase de inicio */
+
+.titulo-de-inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 30px;
+    padding-bottom: 60px;
+
+    h1 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 64px;
+    }
+}
+
+/* Sobre nosotros */
+.sobre-nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ .imagen-sobre-nosotros {
+        overflow: hidden;
+        height: 350px;
+        margin-left: 30px;
+ }
+
+                .texto-sobre-nosotros {
+                    width: 50%;
+                    margin-left: 20px;
+                    margin-right: 30px;
+        
+                    h2 {
+                        color: $color-principal;
+                        font-weight: bold;
+                        font-size: 46px;
+        
+                        p {
+                            color: $color-principal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            text-align: justify;
+                        }
+                    }
+                }
+
+/* Pasos a seguir */
+
+.contenedor-tarjetas-presentacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenedor-inscribite {
+    width: 32%;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 10px;
+    vertical-align: top;
+
+    h3 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 21px;
+        text-align: center;
+
+        p {
+            color: #513D62;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: justify;
+        }
+    }
+}
+
+.contenedor-carga {
+    width: 32%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+
+    h3 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 21px;
+        text-align: center;
+
+        p {
+            color: #513D62;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: justify;
+        }
+    }
+}
+
+.contenedor-red {
+    width: 32%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    vertical-align: top;
+
+    h3 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 21px;
+        text-align: center;
+
+        p {
+            color: #513D62;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: justify;
+        }
+    }
+}
+

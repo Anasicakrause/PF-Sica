@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    background-color: $color-principal;
+    padding: 0 30px 0 30px;
+}
+.redes-sociales{
+     a{
+        padding-left: 15px;
+    }
+}
