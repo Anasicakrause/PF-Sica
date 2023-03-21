@@ -4,9 +4,9 @@ $color-secundario: #F4F1C4;
 $font-family: 'Playfair Display', serif;
 
 /* imports*/
+@import "./noticiastyle";
 @import "./proyectostyle";
 @import "./footer";
-@import "./noticiastyle";
 
 
 body {
@@ -102,38 +102,36 @@ ul {
 }
 
 /* Sobre nosotros */
+
 .sobre-nosotros {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
 
- .imagen-sobre-nosotros {
+    .imagen-sobre-nosotros {
         overflow: hidden;
         height: 350px;
         margin-left: 30px;
- }
+    }
+}
+    .texto-sobre-nosotros {
+        width: 50%;
+        margin-left: 20px;
+        margin-right: 30px;
 
-                .texto-sobre-nosotros {
-                    width: 50%;
-                    margin-left: 20px;
-                    margin-right: 30px;
-        
-                    h2 {
-                        color: $color-principal;
-                        font-weight: bold;
-                        font-size: 46px;
-        
-                        p {
-                            color: $color-principal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            text-align: justify;
-                        }
-                    }
-                }
-
+        h2 {
+            color: $color-principal;
+            font-weight: bold;
+            font-size: 46px;
+            p{
+                color: $color-principal;
+                font-weight: bold;
+                font-size: 46px;
+                text-align: justify;
+            }
+        }
+    }
 /* Pasos a seguir */
 
 .contenedor-tarjetas-presentacion {
@@ -159,7 +157,7 @@ ul {
         text-align: center;
 
         p {
-            color: #513D62;
+            color: $color-principal;
             font-weight: bold;
             font-size: 14px;
             text-align: justify;
@@ -181,7 +179,7 @@ ul {
         text-align: center;
 
         p {
-            color: #513D62;
+            color: $color-principal;
             font-weight: bold;
             font-size: 14px;
             text-align: justify;
@@ -203,7 +201,7 @@ ul {
         text-align: center;
 
         p {
-            color: #513D62;
+            color: $color-principal;
             font-weight: bold;
             font-size: 14px;
             text-align: justify;
@@ -370,5 +368,3 @@ ul {
         }
     }
 }
-
-

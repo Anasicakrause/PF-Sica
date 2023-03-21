@@ -14,10 +14,10 @@ header{
 
 }
 
-.proyectos-header {
+.pagina-header {
     margin-top: -175px;
 }
-.proyectos-encabezado{
+.pagina-encabezado{
     width: 100vw;
     height: 180px;
     overflow-x: hidden;
@@ -27,19 +27,21 @@ header{
         width: 100vw;
         margin: 0;
     }
-    &-texto{
-        display: inline-block;
-        margin-top: -800px;
-        margin-left: 30px;
-        
-        h2{
-            color: $color-principal;
-            font-size: 24px;
-            font-weight: 700;
-        }
+}
+.pagina-encabezado-texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 45px;
+
+    h2 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 46px;
+        margin-top: 35px;
     }
 }
-
 
 /* Seleccion de filtros */
 
@@ -48,7 +50,7 @@ header{
     flex-direction: row;
     justify-content:space-around;
     align-content: center;
-    margin-top: 110px;
+    margin-top: 35px;
 }
 .boton-seleccion{
     width: 180px;
