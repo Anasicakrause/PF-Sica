@@ -4,9 +4,11 @@ $color-secundario: #F4F1C4;
 $font-family: 'Playfair Display', serif;
 
 /* imports*/
+@import "./mediaqueries";
 @import "./noticiastyle";
 @import "./proyectostyle";
 @import "./footer";
+
 
 
 body {
