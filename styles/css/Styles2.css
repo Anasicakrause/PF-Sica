@@ -1,196 +1,6 @@
 @charset "UTF-8";
 /* variables */
 /* imports*/
-/* media query */
-@media (min-width: 501px) {
-  .logo-movil {
-    display: none;
-  }
-  .inicio-mobile {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  /* pagina proyectos */
-  .logo-desktop {
-    display: none;
-  }
-  .inicio-desktop {
-    display: none;
-  }
-  .proyectos-seleccion-filtros {
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .boton-filtro-mobile {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  .boton-seleccion {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  .formulario-boton {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  .pagina-proyectos-main {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-  }
-  .dropdown-menu {
-    width: 95%;
-  }
-}
-@media (max-width: 500px) {
-  /* pagina contacto */
-  .body-contacto {
-    overflow: unset;
-    height: auto;
-  }
-  .pagina-contacto {
-    height: 80vh;
-  }
-  .formulario-pagina-contacto {
-    width: 100%;
-  }
-  .formulario-contacto {
-    width: 90%;
-  }
-  .formulario-boton {
-    margin-top: 10px;
-  }
-  .contacto-imagen-de-fondo {
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-  }
-  .imagen-de-fondo-contacto {
-    height: 100vh;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-  }
-}
-@media (max-width: 500px) {
-  /* Pagina inicio de sesion */
-  .body-inicio-sesion {
-    overflow: unset;
-    height: auto;
-  }
-  .inicio-imagen-de-fondo {
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-  }
-  .imagen-de-fondo-inicio-sesion {
-    height: 100vh;
-  }
-  .pagina-inicio-sesion {
-    height: 80vh;
-  }
-  .formulario-inicio-sesion {
-    width: 100%;
-  }
-  .formulario-inicio {
-    width: 90%;
-  }
-  .formulario-inicio-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .imagen-logo {
-    width: unset;
-    height: unset;
-  }
-}
-@media (max-width: 500px) {
-  /* pagina index */
-  .body-index {
-    width: 100%;
-    height: auto;
-  }
-  .index-imagen {
-    width: 100vw;
-    height: fit-content;
-  }
-  .imagen-de-fondo {
-    object-position: 25% 75%;
-    object-fit: cover;
-  }
-  .titulo-de-inicio {
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0%;
-  }
-  .titulo-de-inicio h1 {
-    font-size: 40px;
-  }
-  .sobre-nosotros {
-    margin-top: 160px;
-  }
-  .imagen-sobre-nosotros {
-    display: none;
-  }
-  .texto-sobre-nosotros {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-  .texto-sobre-nosotros h2 {
-    text-align: center;
-  }
-  .texto-sobre-nosotros p {
-    width: 90%;
-  }
-  .contenedor-tarjetas-presentacion {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-  }
-  .contenedor-inscribite {
-    width: 80%;
-    padding: 0 0 5px 0;
-  }
-  .contenedor-carga {
-    width: 80%;
-    padding: 0 0 5px 0;
-  }
-  .contenedor-red {
-    width: 80%;
-    padding: 0 0 5px 0;
-  }
-}
-@media (max-width: 500px) {
-  .pagina-noticias-main {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-}
 /* Página Noticias */
 .noticias-encabezado {
   width: 100vw;
@@ -778,6 +588,202 @@ ul {
   height: 40px;
   background-color: transparent;
   border: 2px solid #513D62;
+}
+
+/* media query */
+@media (min-width: 501px) {
+  .logo-movil {
+    display: none;
+  }
+  .inicio-mobile {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  /* pagina proyectos */
+  .logo-desktop {
+    display: none;
+  }
+  .inicio-desktop {
+    display: none;
+  }
+  .proyectos-encabezado-texto {
+    margin-top: -180px;
+  }
+  .proyectos-seleccion-filtros {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .boton-filtro-mobile {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .boton-seleccion {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .formulario-boton button {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .formulario-boton {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .pagina-proyectos-main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .dropdown-menu {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  /* pagina contacto */
+  .body-contacto {
+    overflow: unset;
+    height: auto;
+  }
+  .pagina-contacto {
+    height: 80vh;
+  }
+  .formulario-pagina-contacto {
+    width: 100%;
+  }
+  .formulario-contacto {
+    width: 90%;
+  }
+  .formulario-boton {
+    margin-top: 10px;
+  }
+  .contacto-imagen-de-fondo {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .imagen-de-fondo-contacto {
+    height: 100vh;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  /* Pagina inicio de sesion */
+  .body-inicio-sesion {
+    overflow: unset;
+    height: auto;
+  }
+  .inicio-imagen-de-fondo {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .inicio-imagen-de-fondo .imagen-de-fondo-inicio-sesion {
+    height: 100vh;
+  }
+  .pagina-inicio-sesion {
+    height: 80vh;
+  }
+  .formulario-inicio-sesion {
+    width: 100%;
+  }
+  .formulario-inicio-sesion .formulario-inicio {
+    width: 90%;
+  }
+  .formulario-inicio-sesion .formulario-inicio .imagen-logo {
+    width: unset;
+    height: unset;
+  }
+}
+@media (max-width: 500px) {
+  /* pagina index */
+  .body-index {
+    width: 100%;
+    height: auto;
+  }
+  .index-imagen {
+    width: 100vw;
+    height: fit-content;
+  }
+  .imagen-de-fondo {
+    object-position: 25% 75%;
+    object-fit: cover;
+  }
+  .titulo-de-inicio {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0%;
+  }
+  .titulo-de-inicio h1 {
+    font-size: 40px;
+  }
+  .sobre-nosotros {
+    margin-top: 160px;
+  }
+  .imagen-sobre-nosotros {
+    display: none;
+  }
+  .texto-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .texto-sobre-nosotros h2 {
+    text-align: center;
+  }
+  .texto-sobre-nosotros h2 p {
+    width: 90%;
+  }
+  .contenedor-tarjetas-presentacion {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .contenedor-inscribite {
+    width: 80%;
+    padding: 0 0 5px 0;
+  }
+  .contenedor-carga {
+    width: 80%;
+    padding: 0 0 5px 0;
+  }
+  .contenedor-red {
+    width: 80%;
+    padding: 0 0 5px 0;
+  }
+}
+@media (max-width: 500px) {
+  .pagina-noticias-main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 /*# sourceMappingURL=Styles2.css.map */
