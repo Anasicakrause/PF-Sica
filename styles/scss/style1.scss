@@ -126,13 +126,13 @@ ul {
             color: $color-principal;
             font-weight: bold;
             font-size: 46px;
+        }
             p{
                 color: $color-principal;
-                font-weight: bold;
-                font-size: 46px;
+                font-weight: 500;
+                font-size: 22px;
                 text-align: justify;
             }
-        }
     }
 /* Pasos a seguir */
 
@@ -157,14 +157,13 @@ ul {
         font-weight: bold;
         font-size: 21px;
         text-align: center;
-
+    }
         p {
             color: $color-principal;
             font-weight: bold;
             font-size: 14px;
-            text-align: justify;
+            text-align: center;
         }
-    }
 }
 
 .contenedor-carga {
@@ -179,14 +178,13 @@ ul {
         font-weight: bold;
         font-size: 21px;
         text-align: center;
-
+    }
         p {
             color: $color-principal;
             font-weight: bold;
             font-size: 14px;
-            text-align: justify;
+            text-align: center;
         }
-    }
 }
 
 .contenedor-red {
@@ -201,14 +199,13 @@ ul {
         font-weight: bold;
         font-size: 21px;
         text-align: center;
-
+    }
         p {
             color: $color-principal;
             font-weight: bold;
             font-size: 14px;
-            text-align: justify;
+            text-align: center;
         }
-    }
 }
 /* Pagina inicio de sesion */
 

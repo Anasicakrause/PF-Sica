@@ -358,10 +358,10 @@ ul {
   font-weight: bold;
   font-size: 46px;
 }
-.texto-sobre-nosotros h2 p {
+.texto-sobre-nosotros p {
   color: #513D62;
-  font-weight: bold;
-  font-size: 46px;
+  font-weight: 500;
+  font-size: 22px;
   text-align: justify;
 }
 
@@ -388,11 +388,11 @@ ul {
   font-size: 21px;
   text-align: center;
 }
-.contenedor-inscribite h3 p {
+.contenedor-inscribite p {
   color: #513D62;
   font-weight: bold;
   font-size: 14px;
-  text-align: justify;
+  text-align: center;
 }
 
 .contenedor-carga {
@@ -408,11 +408,11 @@ ul {
   font-size: 21px;
   text-align: center;
 }
-.contenedor-carga h3 p {
+.contenedor-carga p {
   color: #513D62;
   font-weight: bold;
   font-size: 14px;
-  text-align: justify;
+  text-align: center;
 }
 
 .contenedor-red {
@@ -428,11 +428,11 @@ ul {
   font-size: 21px;
   text-align: center;
 }
-.contenedor-red h3 p {
+.contenedor-red p {
   color: #513D62;
   font-weight: bold;
   font-size: 14px;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Pagina inicio de sesion */
