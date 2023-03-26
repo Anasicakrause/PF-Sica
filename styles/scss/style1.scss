@@ -136,6 +136,27 @@ ul {
     }
 /* Pasos a seguir */
 
+/* Mixins a utilizar */
+
+@mixin estilo-contenedores{
+    width: 32%;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+@mixin estilo-contenedores-h3{
+    color: $color-principal;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;  
+}
+@mixin estilo-contenedores-p{
+    color: $color-principal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
 .contenedor-tarjetas-presentacion {
     display: flex;
     flex-direction: row;
@@ -146,24 +167,15 @@ ul {
 }
 
 .contenedor-inscribite {
-    width: 32%;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 10px;
-    vertical-align: top;
+    @include estilo-contenedores;
 
     h3 {
-        color: $color-principal;
-        font-weight: bold;
-        font-size: 21px;
-        text-align: center;
+        @include estilo-contenedores-h3;
     }
-        p {
-            color: $color-principal;
-            font-weight: bold;
-            font-size: 14px;
-            text-align: center;
-        }
+
+    p {
+        @include estilo-contenedores-p;
+    }
 }
 
 .contenedor-carga {
@@ -174,72 +186,63 @@ ul {
     vertical-align: top;
 
     h3 {
-        color: $color-principal;
-        font-weight: bold;
-        font-size: 21px;
-        text-align: center;
+        @include estilo-contenedores-h3;
     }
-        p {
-            color: $color-principal;
-            font-weight: bold;
-            font-size: 14px;
-            text-align: center;
-        }
+
+    p {
+        @include estilo-contenedores-p;
+    }
 }
 
 .contenedor-red {
-    width: 32%;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 30px;
-    vertical-align: top;
+    @include estilo-contenedores();
 
     h3 {
-        color: $color-principal;
-        font-weight: bold;
-        font-size: 21px;
-        text-align: center;
+        @include estilo-contenedores-h3;
     }
-        p {
-            color: $color-principal;
-            font-weight: bold;
-            font-size: 14px;
-            text-align: center;
-        }
+
+    p {
+        @include estilo-contenedores-p;
+    }
 }
 /* Pagina inicio de sesion */
 
-.body-inicio-sesion {
+.pagina-inicioSesion-body {
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
-}
-.imagen-de-fondo-inicio-sesion {
-    overflow: hidden;
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
-}
-.pagina-inicio-sesion {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    
-    &-encabezado {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-content: center;
-        height: 20%;
-        padding-left: 45px;
-
-        h2 {
-            color: $color-principal;
-            font-weight: bold;
-            font-size: 46px;
+    &-fondo {
+        overflow: hidden;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        &-imagen {
+            width: 100%;
+            height: auto;
         }
     }
+}
+
+.pagina-inicio-sesion-encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    height: 20%;
+    padding-left: 45px;
+
+    h2 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 46px;
+    }
+}
+
+.pagina-inicio-sesion {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .formulario-inicio-sesion {
@@ -323,21 +326,22 @@ ul {
     }
 }
 
+.pagina-contacto-encabezado {
+    height: 20%;
+    padding-left: 45px;
+
+    h2 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 46px;
+    }
+}
 .pagina-contacto {
     height: 70vh;
     display: flex;
     flex-direction: column;
 
-    &-encabezado {
-        height: 20%;
-        padding-left: 45px;
 
-        h2 {
-            color: $color-principal;
-            font-weight: bold;
-            font-size: 46px;
-        }
-    }
 }
 
 .pagina-contacto-formulario {
