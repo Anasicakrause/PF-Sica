@@ -19,7 +19,7 @@ body {
 
 /* encabezado */
 
-header{
+header {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -27,19 +27,21 @@ header{
     padding: 20px 30px 20px 30px;
 
 }
-.contenedor-logo{
+
+.contenedor-logo {
     justify-items: center;
 }
-.index-imagen{
+
+.index-imagen {
     width: 100vw;
 
-        .imagen-de-fondo {
+    .imagen-de-fondo {
         overflow: hidden;
         height: 110vh;
         width: 100%;
         position: absolute;
         z-index: -1;
-        }
+    }
 }
 
 /* Navbar */
@@ -51,10 +53,10 @@ ul {
 .navbar-toggler {
     border: none;
 
-        &:focus {
+    &:focus {
         box-shadow: none;
-        }
     }
+}
 
 .offcanvas {
     background-color: $color-secundario;
@@ -67,7 +69,7 @@ ul {
         .navbar-nav {
 
             .nav-item {
-        
+
                 .nav-link {
                     color: $color-principal;
                     font-weight: bold;
@@ -117,46 +119,52 @@ ul {
         margin-left: 30px;
     }
 }
-    .texto-sobre-nosotros {
-        width: 50%;
-        margin-left: 20px;
-        margin-right: 30px;
 
-        h2 {
-            color: $color-principal;
-            font-weight: bold;
-            font-size: 46px;
-        }
-            p{
-                color: $color-principal;
-                font-weight: 500;
-                font-size: 22px;
-                text-align: justify;
-            }
+.texto-sobre-nosotros {
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 30px;
+
+    h2 {
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 46px;
     }
+
+    p {
+        color: $color-principal;
+        font-weight: 500;
+        font-size: 22px;
+        text-align: justify;
+    }
+}
+
 /* Pasos a seguir */
 
 /* Mixins a utilizar */
 
-@mixin estilo-contenedores{
+@mixin estilo-contenedores {
     width: 32%;
     text-align: center;
     padding-left: 30px;
     padding-right: 10px;
     vertical-align: top;
 }
-@mixin estilo-contenedores-h3{
+
+@mixin estilo-contenedores-h3 {
     color: $color-principal;
     font-weight: bold;
     font-size: 21px;
-    text-align: center;  
+    text-align: center;
 }
-@mixin estilo-contenedores-p{
+
+@mixin estilo-contenedores-p {
     color: $color-principal;
     font-weight: bold;
     font-size: 14px;
     text-align: center;
 }
+
 .contenedor-tarjetas-presentacion {
     display: flex;
     flex-direction: row;
@@ -205,6 +213,7 @@ ul {
         @include estilo-contenedores-p;
     }
 }
+
 /* Pagina inicio de sesion */
 
 .pagina-inicioSesion-body {
@@ -212,14 +221,17 @@ ul {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
+
     &-fondo {
         overflow: hidden;
         width: 100vw;
+        height: 100vh;
         position: absolute;
         z-index: -1;
+
         &-imagen {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
 }
@@ -231,6 +243,7 @@ ul {
     align-content: center;
     height: 20%;
     padding-left: 45px;
+    margin-top: 35px;
 
     h2 {
         color: $color-principal;
@@ -254,8 +267,9 @@ ul {
     align-items: center;
     height: 80%;
 }
+
 .formulario-inicio {
-    background-color:rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.80);
     height: 510px;
     width: 510px;
     display: flex;
@@ -265,11 +279,13 @@ ul {
     flex-wrap: wrap;
     padding: 25px;
 }
+
 .imagen-logo {
     margin-left: 87px;
     width: 264px;
     height: 50px;
 }
+
 .formulario-datos {
     display: flex;
     flex-direction: column;
@@ -283,7 +299,7 @@ ul {
 
         .formulario-label {
             font-weight: bold;
-        
+
             font-size: 16px;
             color: $color-principal;
         }
@@ -315,20 +331,24 @@ ul {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.pagina-contacto-fondo{
+
+.pagina-contacto-fondo {
     overflow: hidden;
     width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: -1;
+
     &-imagen {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 
 .pagina-contacto-encabezado {
     height: 20%;
     padding-left: 45px;
+    margin-top: 35px;
 
     h2 {
         color: $color-principal;
@@ -336,6 +356,7 @@ ul {
         font-size: 46px;
     }
 }
+
 .pagina-contacto {
     height: 70vh;
     display: flex;
@@ -375,10 +396,11 @@ ul {
 /* media query */
 
 @media (min-width: 501px) {
-    .logo-movil{
+    .logo-movil {
         display: none;
     }
-    .inicio-mobile{
+
+    .inicio-mobile {
         display: none;
     }
 }
@@ -393,194 +415,219 @@ ul {
 }
 
 @media (max-width: 500px) {
+
     /* pagina proyectos */
-    .logo-desktop{
+    .logo-desktop {
         display: none;
     }
-    .inicio-desktop{
+
+    .inicio-desktop {
         display: none;
     }
-    .proyectos-encabezado-texto{
+
+    .proyectos-encabezado-texto {
         margin-top: -180px;
     }
+
     .proyectos-seleccion-filtros {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
     }
-    .boton-filtro-mobile{
+
+    .boton-filtro-mobile {
         @include estilo_boton_mediaq()
-    } 
-    .boton-seleccion{
+    }
+
+    .boton-seleccion {
         @include estilo_boton_mediaq()
-    } 
+    }
+
     .formulario-boton {
-        button{
+        button {
             @include estilo_boton_mediaq()
         }
     }
-    .formulario-boton{
-      @include estilo_boton_mediaq()
+
+    .formulario-boton {
+        @include estilo_boton_mediaq()
     }
 
-    .pagina-proyectos-main{
+    .pagina-proyectos-main {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         width: 95%;
     }
 }
-@media (max-width: 500px){
+
+@media (max-width: 500px) {
+
     /* pagina contacto */
-    .body-contacto{
+    .body-contacto {
         overflow: unset;
-        height: auto;
-        }
-        .pagina-contacto{
-            height: 80vh;
-        }
-        .formulario-pagina-contacto{
-        width: 100%;
-        }
-        .formulario-contacto{
-        width: 90%;
-        }
-        .formulario-boton{
-        margin-top: 10px
-        }
-        .contacto-imagen-de-fondo{
+        height: 100vh;
+    }
+
+    .pagina-contacto-fondo {
         height: 100%;
         position: absolute;
         z-index: -1;
-        }
-        .imagen-de-fondo-contacto{
-            height: 100vh;
-        }
-        footer{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-content: center;
-        } 
-    }
-    @media (max-width: 500px){
-         /* Pagina inicio de sesion */
-        
-        .body-inicio-sesion {
-                overflow: unset;
-                height: auto;
-            }
-        
-            .inicio-imagen-de-fondo {
-                height: 100%;
-                position: absolute;
-                z-index: -1;
-        
-                .imagen-de-fondo-inicio-sesion {
-                    height: 100vh
-                }
-            }
-        
-            .pagina-inicio-sesion {
-                height: 80vh;
-            }
-        
-            .formulario-inicio-sesion {
-                width: 100%;
-        
-                .formulario-inicio {
-                    width: 90%;
-        
-                    .imagen-logo {
-                        width: unset;
-                        height: unset;
-        
-                    }
-        
-                }
-        
-            }
-    }
-    @media (max-width: 500px) {
-    
-            /* pagina index */
-            .body-index {
-                width: 100%;
-                height: auto;
-            }
-    
-            .index-imagen {
-                width: 100vw;
-                height: fit-content;
-            }
-    
-            .imagen-de-fondo {
-                object-position: 25% 75%;
-                object-fit: cover;
-            }
-    
-            .titulo-de-inicio {
-                height: 80vh;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                padding: 0%;
-                h1{
-                    font-size: 40px;
-                }
-            }
-    
-            .sobre-nosotros {
-                margin-top: 160px;
-            }
-    
-            .imagen-sobre-nosotros {
-                display: none;
-            }
-    
-            .texto-sobre-nosotros {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: auto;
-                flex-wrap: nowrap;
-                align-items: center;
-                h2{
-                    text-align: center;  
-                    p{
-                        width: 90%;
-                    }
-                }
-            }
 
-            .contenedor-tarjetas-presentacion {
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-                align-items: center;
-            }
-    
-            .contenedor-inscribite {
-                width: 80%;
-                padding: 0 0 5px 0;
-            }
-    
-            .contenedor-carga {
-                width: 80%;
-                padding: 0 0 5px 0;
-            }
-    
-            .contenedor-red {
-                width: 80%;
-                padding: 0 0 5px 0;
-            }
-    
+        &-imagen {
+            height: 100%;
+        }
     }
 
-    @media (max-width: 500px) {
-        .pagina-noticias-main{
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 1fr);
+    .pagina-contacto {
+        height: 75vh;
+    }
+
+    .pagina-contacto-formulario {
+        width: 100%;
+
+        &-form {
+            width: 90%;
         }
     }
+
+    .formulario-boton {
+        margin-top: 10px
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Pagina inicio de sesion */
+
+    .pagina-inicioSesion-body {
+        overflow: unset;
+        height: 100vh;
+
+        &-fondo {
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+
+            &-imagen {
+                height: 100vh
+            }
+        }
+    }
+
+
+
+    .pagina-inicio-sesion {
+        height: 70vh;
+    }
+
+    .formulario-inicio-sesion {
+        width: 100%;
+
+        .formulario-inicio {
+            width: 90%;
+
+            .imagen-logo {
+                width: unset;
+                height: unset;
+
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* pagina index */
+    .body-index {
+        width: 100%;
+        height: auto;
+    }
+
+    .index-imagen {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .imagen-de-fondo {
+        object-position: 25% 75%;
+        object-fit: cover;
+    }
+
+    .titulo-de-inicio {
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0%;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .sobre-nosotros {
+        margin-top: 160px;
+    }
+
+    .imagen-sobre-nosotros {
+        display: none;
+    }
+
+    .texto-sobre-nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+
+            p {
+                width: 90%;
+            }
+        }
+    }
+
+    .contenedor-tarjetas-presentacion {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .contenedor-inscribite {
+        width: 80%;
+        padding: 0 0 5px 0;
+    }
+
+    .contenedor-carga {
+        width: 80%;
+        padding: 0 0 5px 0;
+    }
+
+    .contenedor-red {
+        width: 80%;
+        padding: 0 0 5px 0;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .pagina-noticias-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}

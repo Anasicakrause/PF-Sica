@@ -446,12 +446,13 @@ ul {
 .pagina-inicioSesion-body-fondo {
   overflow: hidden;
   width: 100vw;
+  height: 100vh;
   position: absolute;
   z-index: -1;
 }
 .pagina-inicioSesion-body-fondo-imagen {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .pagina-inicio-sesion-encabezado {
@@ -461,6 +462,7 @@ ul {
   align-content: center;
   height: 20%;
   padding-left: 45px;
+  margin-top: 35px;
 }
 .pagina-inicio-sesion-encabezado h2 {
   color: #513D62;
@@ -546,17 +548,19 @@ ul {
 .pagina-contacto-fondo {
   overflow: hidden;
   width: 100vw;
+  height: 100vh;
   position: absolute;
   z-index: -1;
 }
 .pagina-contacto-fondo-imagen {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .pagina-contacto-encabezado {
   height: 20%;
   padding-left: 45px;
+  margin-top: 35px;
 }
 .pagina-contacto-encabezado h2 {
   color: #513D62;
@@ -665,27 +669,27 @@ ul {
   /* pagina contacto */
   .body-contacto {
     overflow: unset;
-    height: auto;
+    height: 100vh;
   }
-  .pagina-contacto {
-    height: 80vh;
-  }
-  .formulario-pagina-contacto {
-    width: 100%;
-  }
-  .formulario-contacto {
-    width: 90%;
-  }
-  .formulario-boton {
-    margin-top: 10px;
-  }
-  .contacto-imagen-de-fondo {
+  .pagina-contacto-fondo {
     height: 100%;
     position: absolute;
     z-index: -1;
   }
-  .imagen-de-fondo-contacto {
-    height: 100vh;
+  .pagina-contacto-fondo-imagen {
+    height: 100%;
+  }
+  .pagina-contacto {
+    height: 75vh;
+  }
+  .pagina-contacto-formulario {
+    width: 100%;
+  }
+  .pagina-contacto-formulario-form {
+    width: 90%;
+  }
+  .formulario-boton {
+    margin-top: 10px;
   }
   footer {
     display: flex;
@@ -696,20 +700,20 @@ ul {
 }
 @media (max-width: 500px) {
   /* Pagina inicio de sesion */
-  .body-inicio-sesion {
+  .pagina-inicioSesion-body {
     overflow: unset;
-    height: auto;
+    height: 100vh;
   }
-  .inicio-imagen-de-fondo {
+  .pagina-inicioSesion-body-fondo {
     height: 100%;
     position: absolute;
     z-index: -1;
   }
-  .inicio-imagen-de-fondo .imagen-de-fondo-inicio-sesion {
+  .pagina-inicioSesion-body-fondo-imagen {
     height: 100vh;
   }
   .pagina-inicio-sesion {
-    height: 80vh;
+    height: 70vh;
   }
   .formulario-inicio-sesion {
     width: 100%;
