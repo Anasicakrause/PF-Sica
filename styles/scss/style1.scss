@@ -229,7 +229,7 @@ ul {
         position: absolute;
         z-index: -1;
 
-        &-imagen {
+        &-imagen-desktop {
             width: 100%;
             height: 100%;
         }
@@ -339,7 +339,7 @@ ul {
     position: absolute;
     z-index: -1;
 
-    &-imagen {
+    &-imagen-desktop {
         width: 100%;
         height: 100%;
     }
@@ -401,6 +401,13 @@ ul {
     }
 
     .inicio-mobile {
+        display: none;
+    }
+
+    .pagina-inicioSesion-body-fondo-imagen-mobile{
+        display: none;
+    }
+    .pagina-contacto-fondo-imagen-mobile{
         display: none;
     }
 }
@@ -476,8 +483,11 @@ ul {
         position: absolute;
         z-index: -1;
 
-        &-imagen {
+        &-imagen-mobile {
             height: 100%;
+        }
+        &-imagen-desktop{
+            display: none;
         }
     }
 
@@ -508,6 +518,7 @@ ul {
 @media (max-width: 500px) {
     /* Pagina inicio de sesion */
 
+
     .pagina-inicioSesion-body {
         overflow: unset;
         height: 100vh;
@@ -517,8 +528,11 @@ ul {
             position: absolute;
             z-index: -1;
 
-            &-imagen {
+            &-imagen-mobile {
                 height: 100vh
+            }
+            &-imagen-desktop {
+                display: none;
             }
         }
     }

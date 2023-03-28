@@ -450,7 +450,7 @@ ul {
   position: absolute;
   z-index: -1;
 }
-.pagina-inicioSesion-body-fondo-imagen {
+.pagina-inicioSesion-body-fondo-imagen-desktop {
   width: 100%;
   height: 100%;
 }
@@ -552,7 +552,7 @@ ul {
   position: absolute;
   z-index: -1;
 }
-.pagina-contacto-fondo-imagen {
+.pagina-contacto-fondo-imagen-desktop {
   width: 100%;
   height: 100%;
 }
@@ -606,6 +606,12 @@ ul {
     display: none;
   }
   .inicio-mobile {
+    display: none;
+  }
+  .pagina-inicioSesion-body-fondo-imagen-mobile {
+    display: none;
+  }
+  .pagina-contacto-fondo-imagen-mobile {
     display: none;
   }
 }
@@ -676,8 +682,11 @@ ul {
     position: absolute;
     z-index: -1;
   }
-  .pagina-contacto-fondo-imagen {
+  .pagina-contacto-fondo-imagen-mobile {
     height: 100%;
+  }
+  .pagina-contacto-fondo-imagen-desktop {
+    display: none;
   }
   .pagina-contacto {
     height: 75vh;
@@ -709,8 +718,11 @@ ul {
     position: absolute;
     z-index: -1;
   }
-  .pagina-inicioSesion-body-fondo-imagen {
+  .pagina-inicioSesion-body-fondo-imagen-mobile {
     height: 100vh;
+  }
+  .pagina-inicioSesion-body-fondo-imagen-desktop {
+    display: none;
   }
   .pagina-inicio-sesion {
     height: 70vh;
