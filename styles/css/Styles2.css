@@ -93,6 +93,10 @@
   border: none;
   padding-right: 10px;
 }
+.noticias-articulo-boton button:hover {
+  color: #F4F1C4;
+  background-color: #513D62;
+}
 
 body {
   overflow-x: hidden;
@@ -242,6 +246,10 @@ header {
   text-align: center;
   border: none;
   padding-right: 10px;
+}
+.proyectos-boton-ver button:hover {
+  background-color: #513D62;
+  color: #F4F1C4;
 }
 
 footer {

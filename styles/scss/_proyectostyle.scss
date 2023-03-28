@@ -145,5 +145,10 @@ header{
         text-align: center;
         border: none;
         padding-right: 10px;
+
+        &:hover{
+            background-color: $color-principal;
+            color: $color-secundario;
+        }
     }
 }
