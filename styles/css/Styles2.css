@@ -721,8 +721,15 @@ ul {
     width: 95%;
   }
 }
+/* pagina noticias */
 @media (max-width: 500px) {
-  /* pagina contacto */
+  .pagina-noticias-main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+/* pagina contacto */
+@media (max-width: 500px) {
   .body-contacto {
     overflow: unset;
     height: 100vh;
@@ -851,10 +858,11 @@ ul {
     padding: 0 0 5px 0;
   }
 }
+/* pagina en construccion */
 @media (max-width: 500px) {
-  .pagina-noticias-main {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+  .main-pagina-en-construccion-icono img {
+    width: 200px;
+    height: 200px;
   }
 }
 
