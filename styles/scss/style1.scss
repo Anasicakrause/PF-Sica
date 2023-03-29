@@ -8,6 +8,7 @@ $font-family: 'Playfair Display', serif;
 @import "./noticiastyle";
 @import "./proyectostyle";
 @import "./footer";
+@import "./enConstruccion";
 
 
 
@@ -253,7 +254,7 @@ ul {
 }
 
 .pagina-inicio-sesion {
-    height: 70vh;
+    height: 64vh;
     display: flex;
     flex-direction: column;
 }
@@ -358,7 +359,7 @@ ul {
 }
 
 .pagina-contacto {
-    height: 70vh;
+    height: 64vh;
     display: flex;
     flex-direction: column;
 

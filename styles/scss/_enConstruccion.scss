@@ -1,0 +1,36 @@
+.body-pagina-en-construccion {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.pagina-en-construccion-fondo {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+
+    &-desktop {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main-pagina-en-construccion {
+    height: 64vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &-icono{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
