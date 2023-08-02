@@ -1,38 +1,57 @@
-
-
-let usuarioEmail;
-let usuarioContrasena;
+let passInput = document.getElementById("passInput").value
+let usuarioInput = document.getElementById("usuarioInput").value
 
 // validar email ingresado
 
-function validarEmail () {
+usuarioInput.addEventListener("usuarioInput", updateValue);
 
-    let usuarioEmail = document.getElementsById("usuario");
-    if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valor)) ) {
-    return false;
-    }
+function updateValue(e) {
+  log.textContent = e.target.value;
+
 }
+
+console.log(updateValue)
+
+function validarEmail (usuarioInput) {
+        var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (usuarioInput == mailFormat) {
+          alert("Valid address!");
+
+        } else {
+          alert("Invalid address!");
+        
+        }
+      }
+
+
+validarEmail()
+
 
 // validar contraseña
+console.log(passInput.value)
 
-function validarCons () {
+function validarCons (passInput) {
 
-    let usuarioContrasena = document.getElementById("contraseña");
-    if (usuarioContrasena == null || usuarioContrasena.length == 0) {
+    if (passInput == null && passInput.length == 0) {
+    console.log("No entiendo nada")
     return false;
     }
+    
 }
+validarCons()
+
 
 // continuar con inicio de sesion
 
-let iniciar = document.getElementsById("inicioBoton");
-iniciar.addEventListener("click", validacionDatos)
+function probando(){
+const iniciar = document.getElementById("inicioBoton");
+}
         
 function validacionDatos(e) {
 e.preventDefault();
 console.log("Inicio de sesion exitoso");
 }
 
-validarEmail();
-validarCons();
+
+
 
