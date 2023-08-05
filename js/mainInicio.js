@@ -14,12 +14,11 @@ loginButton.addEventListener("click", (e) => {
 //usuario
 
 function validarEmail () {
-    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const mailFormat = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     
-         if (usuarioInput.value == mailFormat) {
-            console.log("has ingresado un usuario valido");
-         } else {
-              alert("Invalid address!"); 
+         if (mailFormat.test(usuarioInput.value)) {
+            JSON.stringify(localStorage.setItem("usuario", usuarioInput.value))
+            return true;
         }
 }
 
@@ -35,7 +34,7 @@ usuarioInput.addEventListener("change",(_validarEmail) =>{
 
 function validarCons () {
     if (passInput.value != "") {
-    console.log("A ver ahora?")
+    JSON.stringify(localStorage.setItem("password", passInput.value))
     return true;
     }
     
@@ -46,4 +45,3 @@ passInput.addEventListener("change", (_validarCons) => {
 })
 
 validarCons ()
-
