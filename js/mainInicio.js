@@ -7,8 +7,23 @@ loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     validarEmail();
     validarCons();
-  })
-  
+    cargarUsuario(baseDatos);
+})
+ 
+
+loginButton.addEventListener("click", (e) => {
+    swal.fire ({
+        title: "Bienvenido!",
+        text: "Has iniciado sesion exitosamente!",
+        icon: "success",
+      }) .then ( () => {
+        if (true) {
+            window.location.href=("index.html");
+        }
+    })
+});
+    
+
 //Llamo a la info ingresada en los inputs del formulario y valido su contenido
 
 //usuario
@@ -45,3 +60,13 @@ passInput.addEventListener("change", (_validarCons) => {
 })
 
 validarCons ()
+
+// probando
+function cargarUsuario(array) {
+    
+    let usuarioCreado = new usuarioRegistrado(array.length + 1, usuarioInput.value, passInput.value)
+    array.push(usuarioCreado)
+    localStorage.setItem("registro usuarios", JSON.stringify(array))
+
+}
+

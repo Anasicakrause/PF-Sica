@@ -1,3 +1,6 @@
+// AUN EN PROCESO --!!!!
+
+
 class usuarioRegistrado {
     constructor(id,usuario, password) {
         this.id = id,
@@ -20,3 +23,5 @@ if (localStorage.getItem("baseDatos")) {
     baseDatos.push(usuario1,usuario2)
     localStorage.setItem("baseDatos", JSON.stringify(baseDatos))
 }
+
+
