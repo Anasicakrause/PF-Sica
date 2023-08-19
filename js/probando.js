@@ -4,10 +4,10 @@ let loginForm = document.getElementsByClassName("formulario-datos")
 //activo el formulario
 let loginButton = document.getElementById("inicioBoton");
 loginButton.addEventListener("click", (e) => {
+    validarDatos();
     validarEmail();
     validarCons();
     cargarUsuario(baseDatos);
-    validarDatos();
     e.preventDefault();
 });
 
@@ -54,7 +54,19 @@ function cargarUsuario(array) {
 
 };
 
-function validarDatos () {
+function validarDatos (validarEmail,validarCons) => {
+    validarEmail () {
+    const mailFormat = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    
+         if (mailFormat.test(usuarioInput.value)) {
+            JSON.stringify(localStorage.setItem("usuario", usuarioInput.value))
+            return true;
+        }else {
+            console.log("formato no válido")
+        }
+}
+    
+    
     if (validarEmail && validarCons) {
       hola();
     }else{
