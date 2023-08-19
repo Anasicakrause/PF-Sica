@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "usuario": "rflores@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": 2,
+      "usuario": "sflores@gmail.com",
+      "password": "987654321"
+    },
+    {
+        "id": 3,
+        "usuario": "paola.trello@gmail.com",
+        "password": "qwerty12345"
+      },
+    {
+        "id": 4,
+        "usuario": "quique.lopez@gmail.com",
+        "password": "boca99999"
+    },
+    {
+        "id": 5,
+        "usuario": "desarrollo.inmobiliario@gmail.com",
+        "password": "ventas7894"
+    }
+  ]
