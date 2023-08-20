@@ -6,19 +6,12 @@ class usuarioRegistrado {
         this.usuario = usuario;
         this.password = password;
     }
-    mostrarData() {
-        console.log(`El ID es ${this.id}, el usuario es ${this.usuario} y la contraseña es ${this.password}`);
-    }
 }
-
-const usuario1 = new usuarioRegistrado(1, "Roberto Flores", "hola");
-const usuario2 = new usuarioRegistrado(2, "Susana Flores", "gabhaj");
 
 let baseDatos = [];
 
 if (localStorage.getItem("baseDatos")) {
     baseDatos = JSON.parse(localStorage.getItem("baseDatos"));
 } else {
-    baseDatos.push(usuario1, usuario2);
     localStorage.setItem("baseDatos", JSON.stringify(baseDatos));
-} 
+}; 

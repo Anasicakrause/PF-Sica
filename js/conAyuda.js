@@ -1,15 +1,7 @@
-// Generando base de datos de usuarios a partir de un archivo JSON
-let baseDatos = []; // Esta será tu base de datos local
-
-fetch('baseDatos.json') // Cambia la URL a la ubicación real de tu archivo JSON
-  .then(response => response.json())
-  .then(data => {
-    baseDatos = data; // Almacenar los datos en la base de datos local
-  })
-  .catch(error => {
-    console.error('Error al cargar la base de datos:', error);
-  });
-
+function getData(){
+    return fetch('./baseDatos.json').then(response => response.json())
+    
+ }
 //----------------------------------------------------------!!!!!
 
   let loginForm = document.getElementsByClassName("formulario-datos")
@@ -95,6 +87,7 @@ fetch('baseDatos.json') // Cambia la URL a la ubicación real de tu archivo JSON
 
 //--------------------------------------------------------------!!!!
 
+
 // Luego, en la función cargarUsuario(), puedes agregar nuevos usuarios a la base de datos y actualizar el archivo JSON:
 function cargarUsuario() {
     let usuarioIngresado = new usuarioRegistrado(baseDatos.length + 1, usuarioInput.value, passInput.value);
@@ -102,18 +95,14 @@ function cargarUsuario() {
     localStorage.setItem("baseDatos", JSON.stringify(baseDatos)); // Actualizar localStorage si es necesario
 
     // Actualizar el archivo JSON (baseDatos.json) con la nueva información
-    fetch('baseDatos.json', {
-        method: 'PUT', // Puedes usar PUT para actualizar el archivo
+    fetch('./baseDatos.json', {
+        method: 'POST', // Puedes usar PUT para actualizar el archivo
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(baseDatos)
     })
     .then(response => response.json())
-    .then(data => {
-        console.log('Base de datos actualizada:', data);
-    })
-    .catch(error => {
-        console.error('Error al actualizar la base de datos:', error);
-    });
+        console.log("Base de datos actualizada");
 }
+getData().then(console.log("tendre suerte?"))
