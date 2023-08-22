@@ -1,10 +1,3 @@
-function getPreguntas(){
-    fetch("js/preguntasFrecuentes.json")
-    .then(response => response.json())
-    .then((data) => console.log(data));
-}
-
-getPreguntas()
 
 let loginForm = document.getElementsByClassName("formulario-datos")
 
@@ -18,7 +11,7 @@ if (validarNombre() && validarApellido() && validarEmail() && validarMensaje()){
 }else {
     error()
 };
-
+    cargarMensaje();
 });
  
 //Llamo a la info ingresada en los inputs del formulario y valido su contenido
@@ -99,4 +92,10 @@ function error(){
         title: 'Algo ha sucedido!',
         text: 'Procura que todos los campos estén correctos!',
       });
+}
+
+function cargarMensaje() {
+    let mensajeIngresado = new mensajeRegistrado(nombre.value,apellido.value,mensaje.value);
+    preguntasFrecuentes.push(mensajeIngresado);
+    localStorage.setItem("preguntasFrecuentes", JSON.stringify(preguntasFrecuentes));
 }

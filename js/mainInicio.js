@@ -1,7 +1,15 @@
+// Traigo la base de datos
+ const getBaseDatos = async ()=> {
+        const resp = await fetch("./json/baseDatos.json");
+        const data = await resp.json(data);
+        console.log(data);
+};
+
 
 let loginForm = document.getElementsByClassName("formulario-datos")
 
 //activo el formulario
+
 let loginButton = document.getElementById("inicioBoton");
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -11,6 +19,8 @@ loginButton.addEventListener("click", (e) => {
         cargarUsuario();
     };
 });
+
+getBaseDatos();
 
 //Llamo a la info ingresada en los inputs del formulario y valido su contenido
 

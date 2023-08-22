@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "categoría": "Residencia Colectiva",
+      "materialidad": "Hormigón armado",
+      "área": "+200 m2",
+      "origen": "Brasil",
+      "visualizaciones": "5",
+      "proyectista": "Ramiro Gomez",
+      "imagen": "./img/proyectos/VictoriaRamirez-ResidenciaColectiva.webp"
+    },
+    {
+      "id": 2,
+      "categoría": "Residencia Colectiva",
+      "materialidad": "Bloques HCCA",
+      "área": "+200 m2",
+      "origen": "México",
+      "visualizaciones": "15",
+      "proyectista": "Victoria Ramirez",
+      "imagen": "./img/proyectos/VictoriaRamirez-ResidenciaColectiva.webp"
+    },
+    {
+      "id": 3,
+      "categoría": "Residencia Colectiva",
+      "materialidad": "Bloques HCCA",
+      "área": "+200 m2",
+      "origen": "Argentina",
+      "visualizaciones": "15",
+      "proyectista": "Gastón Peréz",
+      "imagen": "./img/proyectos/GastonPerez+ResidenciaColectiva.webp"
+    },
+    {
+      "id": 4,
+      "categoría": "Residencia Colectiva",
+      "materialidad": "Hormigón armado ",
+      "área": "+200 m2",
+      "origen": "Uruguay",
+      "visualizaciones": "5",
+      "proyectista": "Paola Rodriguez",
+      "imagen": "./img/proyectos/Paola Rodriguez+ResidenciaColectiva.webp"
+    },
+    {
+      "id": 5,
+      "categoría": "Residencia Unifamiliar",
+      "materialidad": "Mampuesto cerámico ",
+      "área": "100 m2",
+      "origen": "Uruguay",
+      "visualizaciones": "10",
+      "proyectista": "Sergio Zalamea",
+      "imagen": "./img/proyectos/Sergio Zalamea+ResidenciaUnifamiliar.webp"
+    },
+    {
+      "id": 6,
+      "categoría": "Espacios Públicos",
+      "materialidad": "-- ",
+      "área": "+200 m2",
+      "origen": "Brasil",
+      "visualizaciones": "10",
+      "proyectista": "Héctor López",
+      "imagen": "./img/proyectos/HectorLopez.webp"
+    },
+    {
+      "id": 7,
+      "categoría": "Residencia Unifamiliar",
+      "materialidad": "Steel Framing",
+      "área": "150 m2",
+      "origen": "México",
+      "visualizaciones": "15",
+      "proyectista": "Martín Dulanto",
+      "imagen": "./img/proyectos/MartinDulanto+ResidenciaUnifamiliar.webp"
+    },
+    {
+      "id": 8,
+      "categoría": "Residencia Colectiva",
+      "materialidad": "Hormigón armado",
+      "área": "+200 m2",
+      "origen": "Brasil",
+      "visualizaciones": "15",
+      "proyectista": "Gonzalo Ésposito",
+      "imagen": "./img/proyectos/Gonzalo Esposito+ResidenciaColectiva.webp"
+    },
+    {
+      "id": 9,
+      "categoría": "Residencia Unifamiliar ",
+      "materialidad": "Bloques HCCA",
+      "área": "100 m2",
+      "origen": "Brasil",
+      "visualizaciones": "10",
+      "proyectista": "Jacinta Vázquez",
+      "imagen": "./img/proyectos/JacintaVazquez+ResidenciaUnifamiliar.webp"
+    },
+    {
+      "id": 10,
+      "categoría": "Espacios Públicos",
+      "materialidad": "Mampuesto cerámico",
+      "área": "+200 m3",
+      "origen": "Argentina",
+      "visualizaciones": "5",
+      "proyectista": "Olga Hetaki",
+      "imagen": "./img/proyectos/OlgaHetaki+EspaciosPublicos.webp"
+    },
+    {
+      "id": 10,
+      "categoría": "Espacios Públicos",
+      "materialidad": "--",
+      "área": "+200 m3",
+      "origen": "Brasil",
+      "visualizaciones": "15",
+      "proyectista": "Javier Fakültesi",
+      "imagen": "./img/proyectos/JavierFakultesi+EspaciosPublicos.webp"
+    }
+  ]
