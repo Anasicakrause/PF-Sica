@@ -81,65 +81,55 @@
     </header>
     <div class="proyectos-seleccion-filtros">
         <div class="dropdown boton-filtro-mobile">
-            <button id="categoriaBtn" class="btn boton-seleccion btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Categoría
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Residencial Unifamiliar</a></li>
-                <li><a class="dropdown-item" href="#">Residencia Colectiva</a></li>
-                <li><a class="dropdown-item" href="#">Comercial</a></li>
-                <li><a class="dropdown-item" href="#">Espacios Públicos</a></li>
-            </ul>
+            <!-- <label for="dropdown-menu">Caegoría:</label> -->
+            <select id="dropdown-menu-categoria" class="btn boton-seleccion btn-secondary dropdown-toggle">
+                <option class="dropdown-item" value="*">Categoría</option>
+                <option class="dropdown-item" value="Residencia Unifamiliar">Residencia Unifamiliar</option>
+                <option class="dropdown-item" value="Residencia Colectiva">Residencia Colectiva</option>
+                <option class="dropdown-item" value="Comercial">Comercial</option>
+                <option class="dropdown-item" value="Espacios Públicos">Espacios Públicos</option>
+            </select>
         </div>
         <div class="dropdown boton-filtro-mobile">
-            <button id="areaBtn" class="btn boton-seleccion btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Área
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">50 m2</a></li>
-                <li><a class="dropdown-item" href="#">100 m2</a></li>
-                <li><a class="dropdown-item" href="#">150 m2</a></li>
-                <li><a class="dropdown-item" href="#">+200 m2</a></li>
-            </ul>
+        
+            <select id="dropdown-menu-area" class="btn boton-seleccion btn-secondary dropdown-toggle">
+                <option class="dropdown-item" value="*">Área</option>
+                <option class="dropdown-item" value="50 m2">50 m2</option>
+                <option class="dropdown-item" value="100 m2">100 m2</option>
+                <option class="dropdown-item" value="150 m2">150 m2</option>
+                <option class="dropdown-item" value="+200 m2">+200 m2</option>
+            </select>
         </div>
         <div class="dropdown boton-filtro-mobile">
-            <button id="matBtn" class="btn boton-seleccion btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Materialidad
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Mampuesto cerámico</a></li>
-                <li><a class="dropdown-item" href="#">Steel Framing</a></li>
-                <li><a class="dropdown-item" href="#">Madera</a></li>
-                <li><a class="dropdown-item" href="#">Hormigón</a></li>
-                <li><a class="dropdown-item" href="#">Bloques HCCA</a></li>
-            </ul>
+           
+            <select id="dropdown-menu-mat" class="btn boton-seleccion btn-secondary dropdown-toggle">
+                <option class="dropdown-item" value="*">Materialidad</option>
+                <option class="dropdown-item" value="Mampuesto cerámico">Mampuesto cerámico</option>
+                <option class="dropdown-item" value="Steel Framing">Steel Framing</option>
+                <option class="dropdown-item" value="Madera">Madera</option>
+                <option class="dropdown-item" value="Hormigón armado">Hormigón armado</option>
+                <option class="dropdown-item" value="Bloques HCCA">Bloques HCCA</option>
+            </select>
         </div>
         <div class="dropdown boton-filtro-mobile">
-            <button id="origenBtn"class="btn boton-seleccion btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Origen
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Uruguay</a></li>
-                <li><a class="dropdown-item" href="#">Argentina</a></li>
-                <li><a class="dropdown-item" href="#">Brasil</a></li>
-                <li><a class="dropdown-item" href="#">México</a></li>
-            </ul>
+            
+            <select id="dropdown-menu-origen" class="btn boton-seleccion btn-secondary dropdown-toggle">
+                <option class="dropdown-item" value="*">Origen</option>
+                <option class="dropdown-item" value="Uruguay">Uruguay</option>
+                <option class="dropdown-item" value="Argentina">Argentina</option>
+                <option class="dropdown-item" value="Brasil">Brasil</option>
+                <option class="dropdown-item" value="México">México</option>
+            </select>
         </div>
         <div class="dropdown boton-filtro-mobile">
-            <button id="visualBtn" class="btn boton-seleccion btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Visualizaciones
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">5</a></li>
-                <li><a class="dropdown-item" href="#">10</a></li>
-                <li><a class="dropdown-item" href="#">15</a></li>
-                <li><a class="dropdown-item" href="#">+20</a></li>
-            </ul>
+            
+            <select id="dropdown-menu-visual" class="btn boton-seleccion btn-secondary dropdown-toggle">
+                <option class="dropdown-item" value="*">Visualizaciones</option>
+                <option class="dropdown-item" value="5">5</option>
+                <option class="dropdown-item" value="10">10</option>
+                <option class="dropdown-item" value="15">15</option>
+                <option class="dropdown-item" value="+20">+20</option>
+            </select>
         </div>
         <div class="formulario-boton">
             <button id="filtrarBtn">Filtrar</button>
@@ -151,7 +141,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/RamiroGomez+ResidenciaColectiva.webp"
                     alt="residencia colectiva de ramiro gomez">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Colectiva" data-area="+200 m2" data-mat="Hormigón armado" data-origen="Brasil" data-visual="5">
                 <p> Categoría: Residencia Colectiva<br> Materialidad: Hormigón armado<br> Proyectista:
                     Ramiro Gomez
                 </p>
@@ -165,7 +155,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/VictoriaRamirez-ResidenciaColectiva.webp"
                     alt="residencia colectiva de victoria ramirez">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Colectiva" data-area="+200 m2" data-mat="Bloques HCCA" data-origen="México" data-visual="15">
                 <p> Categoría: Residencia Colectiva<br> Materialidad: Bloques HCCA <br> Proyectista:
                     Victoria Ramirez
                 </p>
@@ -179,7 +169,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/GastonPerez+ResidenciaColectiva.webp"
                     alt="residencia colectiva de gaston perez">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Colectiva" data-area="+200 m2" data-mat="Bloques HCCA" data-origen="Argentina" data-visual="15">
                 <p> Categoría: Residencia Colectiva<br> Materialidad: Bloques HCCA <br> Proyectista:
                     Gastón Peréz
                 </p>
@@ -192,7 +182,7 @@
             <div class="pagina-proyectos-contenedor-img">
                 <img class="proyectos-imagen" src="./img/proyectos/Paola Rodriguez+ResidenciaColectiva.webp" alt="residencia colectiva paola rodriguez">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Colectiva" data-area="+200 m2" data-mat="Hormigón armado" data-origen="Uruguay" data-visual="5">
                 <p> Categoría: Residencia Colectiva<br> Materialidad: Hormigón armado <br> Proyectista:
                     Paola Rodriguez
                 </p>
@@ -205,7 +195,7 @@
             <div class="pagina-proyectos-contenedor-img">
                 <img class="proyectos-imagen" src="./img/proyectos/Sergio Zalamea+ResidenciaUnifamiliar.webp" alt="residencia unifamiliar sergio zalamea">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Unifamiliar" data-area="100 m2" data-mat="Mampuesto cerámico" data-origen="Uruguay" data-visual="10">
                 <p> Categoría: Residencia Unifamiliar<br> Materialidad: Mampuesto cerámico <br> Proyectista:
                     Sergio Zalamea
                 </p>
@@ -219,7 +209,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/HectorLopez.webp"
                     alt="espacio publico de hector lopez">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Espacios Públicos" data-area="+200 m2" data-mat="Hormigón armado" data-origen="Brasil" data-visual="10">
                 <p> Categoría: Espacios Públicos<br> Materialidad: -- <br> Proyectista:
                     Héctor López
                 </p>
@@ -233,7 +223,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/MartinDulanto+ResidenciaUnifamiliar.webp"
                     alt="residencia unifamiliar de martin dulanto">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Unifamiliar" data-area="150 m2" data-mat="Steel Framing" data-origen="México" data-visual="15">
                 <p> Categoría: Residencia Unifamiliar<br> Materialidad: Steel Framing <br> Proyectista:
                     Martín Dulanto
                 </p>
@@ -247,7 +237,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/AgustinGonzalez-ResidenciaColectiva.webp"
                     alt="residencia colectiva de agustin gonzalez">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Colectiva" data-area="+200 m2" data-mat="Mampuesto cerámico" data-origen="Brasil" data-visual="5">
                 <p> Categoría: Residencia Colectiva<br> Materialidad: Mampuesto cerámico <br> Proyectista:
                     Agustín González
                 </p>
@@ -260,7 +250,7 @@
             <div class="pagina-proyectos-contenedor-img">
                 <img class="proyectos-imagen" src="./img/proyectos/Gonzalo Esposito+ResidenciaColectiva.webp" alt="residencia colectiva de gonzalo esposito">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Colectiva" data-area="+200 m2" data-mat="Hormigón armado" data-origen="Brasil" data-visual="15">
                 <p> Categoría: Residencia Colectiva<br> Materialidad: Hormigón armado <br> Proyectista:
                     Gonzalo Ésposito
                 </p>
@@ -274,7 +264,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/JacintaVazquez+ResidenciaUnifamiliar.webp"
                     alt="residencia unifamiliar de jacinta vazquez">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Residencia Unifamiliar" data-area="100 m2" data-mat="Bloques HCCA" data-origen="Brasil" data-visual="10">
                 <p> Categoría: Residencia Unifamiliar <br> Materialidad: Bloques HCCA <br> Proyectista:
                     Jacinta Vázquez
                 </p>
@@ -288,7 +278,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/OlgaHetaki+EspaciosPublicos.webp"
                     alt="espacios publicos de olga hetaki">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="Espacios Públicos" data-area="+200 m2" data-mat="Mampuesto cerámico" data-origen="Argentina" data-visual="5">
                 <p> Categoría: Espacios Públicos <br> Materialidad: Mampuesto cerámico <br> Proyectista:
                     Olga Hetaki
                 </p>
@@ -302,7 +292,7 @@
                 <img class="proyectos-imagen" src="./img/proyectos/JavierFakultesi+EspaciosPublicos.webp"
                     alt="espacios publicos de javier fakultesi">
             </div>
-            <div class="pagina-proyectos-contenedor-descripcion">
+            <div class="pagina-proyectos-contenedor-descripcion" data-categoria="REspacios Públicos" data-area="+200 m2" data-mat="Hormigón armado" data-origen="Brasil" data-visual="15">
                 <p> Categoría: Espacios Públicos <br> Materialidad: -- <br> Proyectista:
                     Javier Fakültesi
                 </p>
